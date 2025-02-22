@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bali.Tour</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-[#091321] text-white">
+    <section id="heder" class="h-screen w-full bg-cover bg-[url('../img/bali.jpg')]">
+        <div class="h-full w-full bg-gradient-to-b from-black/20 via-black/20 to-[#091321] via-80%">
+            <div class="h-[120px] w-full bg-black opacity-25 absolute"> </div>
+            <div class="h-[120px] w-full relative flex px-[5%] items-center justify-between ">
+                <h1 class="text-[24px] font-bold ">Bali.Tour</h1>
+                <ul class="hidden md:flex gap-10 menu">
+                    <li><a href="#" class="text-[16px]  ">Discover</a></li>
+                    <li><a href="#" class="text-[16px]  ">Destination</a></li>
+                    <li><a href="#" class="text-[16px]  ">Trip Plan</a></li>
+                    <li><a href="#" class="text-[16px]  ">About Us</a></li>
+                </ul>
+                <p class="hidden md:block text-[16px] search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </p>
+                <div class="block md:hidden hamburger-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="mobile-menu hidden flex-col items-center bg-[#091321] text-white w-full absolute top-[120px] left-0">
+                <ul class="flex flex-col gap-4 menu items-center">
+                    <li><a href="#" class="text-[16px]">Discover</a></li>
+                    <li><a href="#" class="text-[16px]">Destination</a></li>
+                    <li><a href="#" class="text-[16px]">Trip Plan</a></li>
+                    <li><a href="#" class="text-[16px]">About Us</a></li>
+                </ul>
+                <div id="icon" class="flex gap-4 mt-4 items-center">
+                    <i class="fab fa-whatsapp w-8 h-8 social-icon"></i>
+                    <i class="fab fa-twitter w-8 h-8 social-icon"></i>
+                    <i class="fab fa-instagram w-8 h-8 social-icon"></i>
+                    <i class="fab fa-facebook w-8 h-8 social-icon"></i>
+                </div>
+            </div>
+            <div class="h-[80vh] flex flex-col justify-center px-[5%] gap-10 -[40%]">
+                <p class="text-[24px] ">Welcome To bali</p>
+                <h1 class="text-[64px] font-bold leading-none">We Take Care Of Your Trip</h1>
+                <p class="text-[16px] ">We balieve in a travelling experience by profiding
+                    our Tour plan that suits your the best </p>
+                <div class="flex">
+                    <button class="bg-[#5cb26e] p-5 text-[16px]  font-medium">Book A Trip</button>
+                    <button class="bg-[#007e1b] p-5 text-[16px]  font-medium"><i
+                            class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="jenis" class="pt-20 pb-10 px-[5%]">
+        <div class="text-center w-full md:w-[40%] m-auto">
+            <h2 class="text-[36px] font-semibold mb-4">What Kind We Offer For You </h2>
+            <p class="text-[16px]">We are here with various types of offers that you can get
+                with you family in bali with bali tour </p>
+        </div>
+
+        <div class="mt-10 w-full flex flex-col md:flex-row items-end gap-4 md:gap-0">
+            <div id="box-1" class="box flex flex-col justify-between bg-[#151F2C] p-6 w-full md:w-1/3 h-[300px] rounded-lg"
+                onclick="changeActiveBox(1)">
+                <div>
+                    <p class="text-[24px] font-medium">01</p>
+                    <h3 class="text-[24px] font-medium">Various
+                        Destinations</h3>
+                </div>
+            </div>
+            <div id="box-2" class="box flex flex-col justify-between bg-[#5CB26E] p-6 w-full md:w-1/3 h-[363px] rounded-lg"
+                onclick="changeActiveBox(2)">
+                <div>
+                    <p class="text-[24px] font-medium">02</p>
+                    <h3 class="text-[24px] font-medium">Everything is
+                        Included</h3>
+                </div>
+                <p class="deskripsi text-[16px]">All accommodation, food, and desination facilities included in our
+                    package are included in the listed
+                    price </p>
+                <div class="tombol flex gap-10 text-[18px] items-center">
+                    <p>LEARN MORE</p>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <div id="box-3" class="box flex flex-col justify-between bg-[#151F2C] p-6 w-full md:w-1/3 h-[300px] rounded-lg"
+                onclick="changeActiveBox(3)">
+                <div>
+                    <p class="text-[24px] font-medium">03</p>
+                    <h3 class="text-[24px] font-medium">
+                        Affrodable prices</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="melihat bali" class="pt-10 pl-[5%]">
+    <div class="flex flex-col lg:flex-row gap-10 lg:gap-[150px]">
+        <h2 class="text-[24px] md:text-[36px] font-semibold w-full lg:w-[400px]">Let’s See The Bali
+            With Us With You and
+            Your Family</h2>
+        <div class="flex flex-col justify-between w-full lg:w-auto">
+            <p class="text-[14px] md:text-[16px] font-medium w-full lg:w-[428px]">We are online based travel agent, allowing us to
+                keep our prices competitive. We will take care of the
+                booking process for you, from start to finish</p>
+            <div class="flex mt-4 lg:mt-0">
+                <button class="bg-[#5cb26e] p-3 md:p-5 text-[14px] md:text-[16px] font-medium">Book A Trip</button>
+                <button class="bg-[#007e1b] p-3 md:p-5 text-[14px] md:text-[16px] font-medium"><i
+                        class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="mt-14 owl-carousel owl-theme">
+        <div class="item relative group">
+            <img src="img/Rectangle 10.png" alt="patung" class="w-full h-auto md:w-[363px] md:h-[600px]">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent 
+                via-transparent to-[#091321] opacity-0 group-hover:opacity-100
+                transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 p-4">
+                    <h3 class="text-[16px] md:text-[20px] font-semibold">kelingking beach</h3>
+                    <p class="text-[14px] md:text-[16px] font-medium">Nusa parido, Bali</p>
+                </div>
+            </div>
+        </div>
+        <div class="item relative group">
+            <img src="img/Rectangle 11.png" alt="gapura" class="w-full h-auto md:w-[363px] md:h-[600px]">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent 
+                via-transparent to-[#091321] opacity-0 group-hover:opacity-100
+                transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 p-4">
+                    <h3 class="text-[16px] md:text-[20px] font-semibold">kelingking beach</h3>
+                    <p class="text-[14px] md:text-[16px] font-medium">Nusa parido, Bali</p>
+                </div>
+            </div>
+        </div>
+        <div class="item relative group">
+            <img src="img/Rectangle 9.png" alt="pulau" class="w-full h-auto md:w-[363px] md:h-[600px]">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent 
+            via-transparent to-[#091321] opacity-0 group-hover:opacity-100
+            transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 p-4">
+                    <h3 class="text-[16px] md:text-[20px] font-semibold">kelingking beach</h3>
+                    <p class="text-[14px] md:text-[16px] font-medium">Nusa parido, Bali</p>
+                </div>
+            </div>
+        </div>
+        <div class="item relative group">
+            <img src="img/Rectangle 8.png" alt="pura" class="w-full h-auto md:w-[363px] md:h-[600px]">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent 
+            via-transparent to-[#091321] opacity-0 group-hover:opacity-100
+            transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 opacity-0 group-hover:opacity-100 p-4">
+                    <h3 class="text-[16px] md:text-[20px] font-semibold">kelingking beach</h3>
+                    <p class="text-[14px] md:text-[16px] font-medium">Nusa parido, Bali</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="py-20 px-[5%]" id="Trip">
+    <div class="flex flex-col gap-10">
+        <div class="text-center w-full md:w-[40%] m-auto">
+            <h2 class="text-[36px] font-semibold mb-4">Trip Pland</h2>
+            <p class="text-[16px]">Start Your Voucation by choosing holiday package in bali that
+                we have provided</p>
+        </div>
+        <div class="w-full md:w-[80%] mx-auto flex justify-between relative">
+            <div class="flex flex-col gap-4 justify-center items-center relative z-10" data-trip="1">
+                <div class="bg-[#d9d9d9] h-6 w-6 trip-circle rounded-full flex items-center justify-center">
+                    <div class="bg-[#091321] hidden h-3 w-3 rounded-full"></div>
+                </div>
+                <p class="text-[12px] text-center lg:text-[16px] lg:w-full font-medium text-[#FFFFFF80] trip-text w-[45px]">Half Day</p>
+            </div>
+            <div class="flex flex-col gap-4 justify-center items-center relative z-10" data-trip="2">
+                <div class="bg-[#d9d9d9] h-6 w-6 trip-circle rounded-full flex items-center justify-center">
+                    <div class="bg-[#091321] hidden h-3 w-3 rounded-full"></div>
+                </div>
+                <p class="text-[12px] text-center lg:text-[16px] lg:w-full font-medium text-[#FFFFFF80] trip-text w-[45px]">Full Day</p>
+            </div>
+            <div class="flex flex-col gap-4 justify-center items-center relative z-10" data-trip="3">
+                <div class="bg-[#d9d9d9] h-6 w-6 trip-circle rounded-full flex items-center justify-center">
+                    <div class="bg-[#091321] hidden h-3 w-3 rounded-full"></div>
+                </div>
+                <p class="text-[12px] text-center lg:text-[16px] lg:w-full font-medium text-[#FFFFFF80] trip-text w-[45px]">Tour Package</p>
+            </div>
+            <div class="flex flex-col gap-4 justify-center items-center relative z-10" data-trip="4">
+                <div class="bg-[#d9d9d9] h-6 w-6 trip-circle rounded-full flex items-center justify-center">
+                    <div class="bg-[#091321] hidden h-3 w-3 rounded-full"></div>
+                </div>
+                <p class="text-[12px] text-center lg:text-[16px] lg:w-full font-medium text-[#FFFFFF80] trip-text  w-[45px]">Round Trip</p>
+            </div>
+            <div class="flex flex-col gap-4 justify-center items-center relative z-10" data-trip="5">
+                <div class="bg-[#d9d9d9] h-6 w-6 trip-circle rounded-full flex items-center justify-center">
+                    <div class="bg-[#091321] hidden h-3 w-3 rounded-full"></div>
+                </div>
+                <p class="text-[12px] text-center lg:text-[16px] lg:w-full font-medium text-[#FFFFFF80] trip-text w-[45px] break-words">Honeymoon</p>
+            </div>
+            <div class="flex flex-col gap-4 justify-center items-center relative z-10" data-trip="6">
+                <div class="bg-[#d9d9d9] h-6 w-6 trip-circle rounded-full flex items-center justify-center">
+                    <div class="bg-[#091321] hidden h-3 w-3 rounded-full"></div>
+                </div>
+                <p class="text-[12px] text-center lg:text-[16px] lg:w-full font-medium text-[#FFFFFF80] trip-text w-[45px] break-words">Combination</p>
+            </div>
+            <div class="absolute mb:w-[70%] w-[90%] h-1 bg-[#FFFFFF80] top-2.5 lg:left-11 left-7 "></div>
+        </div>
+        <div class="w-full h-[500px] flex flex-col md:flex-row">
+            <div class="w-full md:w-[30%] bg-[#161F2C] flex flex-col">
+                <div class="days h-[125px] w-full flex justify-between items-center p-5 hover:bg-[#5cb26e]">
+                    <div class="flex flex-col">
+                        <h4 class="font-medium text-[24px]">3D2N Tour</h4>
+                        <p class="font-medium text-[12px]">Tour Package 3 Day and 2 Nights</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <h4 class="font-medium text-[24px]">$168</h4>
+                        <p class="font-medium text-[12px]">person</p>
+                    </div>
+                </div>
+                <div class="days h-[125px] w-full flex justify-between items-center p-5 hover:bg-[#5cb26e]">
+                    <div class="flex flex-col">
+                        <h4 class="font-medium text-[24px]">4D2N Tour</h4>
+                        <p class="font-medium text-[12px]">Tour Package 4 Day and 3 Nights</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <h4 class="font-medium text-[24px]">$215</h4>
+                        <p class="font-medium text-[12px]">person</p>
+                    </div>
+                </div>
+                <div class="days h-[125px] w-full flex justify-between items-center p-5 hover:bg-[#5cb26e]">
+                    <div class="flex flex-col">
+                        <h4 class="font-medium text-[24px]">5D2N Tour</h4>
+                        <p class="font-medium text-[12px]">Tour Package 5 Day and 4 Nights</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <h4 class="font-medium text-[24px]">$287</h4>
+                        <p class="font-medium text-[12px]">person</p>
+                    </div>
+                </div>
+                <div class="days h-[125px] w-full flex justify-between items-center p-5 hover:bg-[#5cb26e]">
+                    <div class="flex flex-col">
+                        <h4 class="font-medium text-[24px]">6D2N Tour</h4>
+                        <p class="font-medium text-[12px]">Tour Package 6 Day and 5 Nights</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <h4 class="font-medium text-[24px]">330</h4>
+                        <p class="font-medium text-[12px]">person</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-[70%] relative">
+                <div id="tmblTrip"
+                    class="h-[125px] w-[80px] bg-[#09132180] absolute flex justify-center items-center">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31568.26907436762!2d115.2454397968128!3d-8.49611060889736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d739f22c9c3%3A0x54a38afd6b773d1c!2sUbud%2C%20Kecamatan%20Ubud%2C%20Kabupaten%20Gianyar%2C%20Bali!5e0!3m2!1sid!2sid!4v1739431050281!5m2!1sid!2sid"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    class="w-full h-[500px]"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pb-20 md:pt-20 pt-[530px] px-[5%] flex flex-col md:flex-row gap-10 md:gap-5" id="experience">
+    <div id="pantai" class=" md:w-[50%] w-full h-[400px] lg:h-[500px] bg-cover bg-[url('../img/pantai.png')] order-2 md:order-1"></div>
+    <div class="flex flex-col justify-center w-full md:w-[50%] lg:w-[700px] order-1 md:order-2">
+        <h2 class="text-[20px] md:text-[28px] lg:text-[36px] font-semibold mb-4">With Our Experience We Will Serve You</h2>
+        <p class="text-[12px] md:text-[14px] lg:text-[16px] font-medium mb-6 md:mb-10">Since we first opened, we have always prioritized the convenience of our users by providing low prices and with an easy process.</p>
+        <div class="flex flex-row md:gap-6 justify-between">
+            <div class="flex flex-col items-center">
+                <p class="text-[20px] md:text-[28px] lg:text-[36px] font-semibold">10</p>
+                <p class="text-[12px] md:text-[14px] lg:text-[16px] font-medium text-center">Years<br>Experience</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <p class="text-[20px] md:text-[28px] lg:text-[36px] font-semibold">1582</p>
+                <p class="text-[12px] md:text-[14px] lg:text-[16px] font-medium text-center">Complete<br>Tours</p>
+            </div>
+            <div id="icon" class="flex flex-col items-center">
+                <p class="text-[20px] md:text-[28px] lg:text-[36px] font-semibold">10k+</p>
+                <p class="text-[12px] md:text-[14px] lg:text-[16px] font-medium text-center">Happy<br>Customer</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-16" id="order">
+    <div class="w-[80%] mx-auto">
+        <h2 class="text-center text-xl text-white font-bold mb-12">silahkan booking derrrr</h2>
+        <form action="" class="mt-10 flex flex-col gap-4">
+            <div class="flex flex-col l gap-3">
+                <label for="name" class="text-lg  ">Nama</label>
+                <input type="text" id="name" name="name"
+                    class="border-2 p-3 rounded-md focus:outline-none focus:ring focus:ring-stone-500 transition duration-200 shadow-md h-[50px]"
+                    placeholder="Masukkan nama Anda">
+                    <label for="Alamat" class="text-lg">Alamat</label>
+                    <input type="Alamat" id="Alamat" name="Alamat"
+                        class="border-2 p-3 rounded-md focus:outline-none focus:ring focus:ring-stone-500 transition duration-200 shadow-md h-[200px] "
+                        placeholder="Masukkan alamat Anda">
+                <label for="nomer" class="text-lg">nomer telepon</label>
+                <input type="nomer" id="nomer" name="nomer"
+                    class="border-2 p-3 rounded-md focus:outline-none focus:ring focus:ring-stone-500 transition duration-200 shadow-md h-[50px]"
+                    placeholder="Masukkan nomor telepon Anda">
+                    </div>
+       
+    
+            <button type="submit"
+                class="w-full bg-[#5CB26E] text-white font-bold p-3 rounded-md hover:bg-stone-500">submit
+            </button>
+    </div>
+</section>
+
+<footer class="py-20 px-[5%] bg-[#091321] text-white flex flex-col lg:flex-row justify-between gap-10 lg:gap-0">
+    <div class="flex flex-col mb-0 md:mb-5">
+        <h2 class="text-[32px] font-semibold">Bali.Tour</h2>
+        <p class="text-[16px] font-medium mt-4 w-full md:w-[365px]">We believe in a travelling experience by providing our tour plan that suit your the best!</p>
+        <div class="flex gap-4 mt-10  ">
+            <img src="img/instagram.png" alt="Instagram" class="w-8 h-8">
+            <img src="img/facebook.png" alt="Facebook" class="w-8 h-8">
+            <img src="img/youtube.png" alt="YouTube" class="w-8 h-8">
+            <img src="img/snapchat.png" alt="Snapchat" class="w-8 h-8">
+        </div>
+    </div>
+    <div class="flex flex-col mb-0 md:mb-10">
+        <h3 class="text-[20px] font-semibold">Pages</h3>
+        <p class="text-[16px] font-medium mt-4">Discover</p>
+        <p class="text-[16px] font-medium mt-2">Destination</p>
+        <p class="text-[16px] font-medium mt-2">Trip Plan</p>
+        <p class="text-[16px] font-medium mt-2">About Us</p>
+    </div>
+    <div class="flex flex-col mb-0 md:mb-10">
+        <h3 class="text-[20px] font-semibold">Contact Us</h3>
+        <p class="text-[16px] font-medium mt-4">+620888888877</p>
+        <p class="text-[16px] font-medium mt-2">+620888888877</p>
+        <p class="text-[16px] font-medium mt-2">azkarafif2309@gmail.com</p>
+    </div>
+    <div class="flex flex-col items-center md:items-start ">
+        <iframe id="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31568.26907436762!2d115.2454397968128!3d-8.49611060889736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d739f22c9c3%3A0x54a38afd6b773d1c!2sUbud%2C%20Kecamatan%20Ubud%2C%20Kabupaten%20Gianyar%2C%20Bali!5e0!3m2!1sid!2sid!4v1739431050281!5m2!1sid!2sid" class="w-full lg:w-[268px] h-[160px]" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="text-[16px] font-medium mt-4">Jl. Arjuna IV, Cawang, Jakarta Selatan</p>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
