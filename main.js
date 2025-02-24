@@ -134,7 +134,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-
     const form = document.querySelector('form');
     const nameInput = document.getElementById('name');
     const alamatInput = document.getElementById('Alamat');
@@ -168,6 +167,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (!valid) {
             event.preventDefault();
+        } else {
+            // Clear inputs if form is valid
+            nameInput.value = '';
+            alamatInput.value = '';
+            nomerInput.value = '';
+        }
+    });
+
+    // Remove error message when name input is in uppercase
+    nameInput.addEventListener('input', function () {
+        if (nameInput.value === nameInput.value.toUpperCase()) {
+            document.querySelectorAll('.error-message').forEach(el => el.remove());
         }
     });
 });
