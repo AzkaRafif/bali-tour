@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll('.error-message').forEach(el => el.remove());
 
         // Check if name is in uppercase
-        if (nameInput.value !== nameInput.value.toUpperCase()) {
+        if (nameInput.value.charAt(0) !== nameInput.value.charAt(0).toUpperCase()) {
             const errorMessage = document.createElement('p');
             errorMessage.className = 'error-message text-red-500';
             errorMessage.innerText = '* huruf awal menggunakan huruf kapital';
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Remove error message when name input is in uppercase
     nameInput.addEventListener('input', function () {
-        if (nameInput.value === nameInput.value.toUpperCase()) {
+        if (nameInput.value.charAt(0) === nameInput.value.charAt(0).toUpperCase()) {
             document.querySelectorAll('.error-message').forEach(el => el.remove());
         }
     });
